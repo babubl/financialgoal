@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/financialgoal/static/css/main.bf91b740.css",
+    "main.js": "/financialgoal/static/js/main.68dbc8c6.js",
+    "static/js/488.625e944d.chunk.js": "/financialgoal/static/js/488.625e944d.chunk.js",
+    "index.html": "/financialgoal/index.html",
+    "main.bf91b740.css.map": "/financialgoal/static/css/main.bf91b740.css.map",
+    "main.68dbc8c6.js.map": "/financialgoal/static/js/main.68dbc8c6.js.map",
+    "488.625e944d.chunk.js.map": "/financialgoal/static/js/488.625e944d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf91b740.css",
+    "static/js/main.68dbc8c6.js"
+  ]
+}
