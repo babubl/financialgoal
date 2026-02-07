@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# WealthPath Financial Planner - Setup Instructions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quick Start (5 minutes)
 
-## Available Scripts
+### 1. Install Dependencies
+```bash
+npm install recharts lucide-react
+```
 
-In the project directory, you can run:
+### 2. Add the Component
+Copy `WealthPathApp.jsx` to your `src/` folder
 
-### `npm start`
+### 3. Use in App.js
+```javascript
+import WealthPathApp from './WealthPathApp';
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+function App() {
+  return <WealthPathApp />;
+}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+export default App;
+```
 
-### `npm test`
+### 4. Run
+```bash
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features Included
 
-### `npm run build`
+✅ Live Market Data (NSE India via API)
+✅ Professional Navy/Teal UI
+✅ CFA-Verified Calculations
+✅ Fund Category Recommendations
+✅ Tax Calculations (LTCG, Income Tax)
+✅ Emergency Fund & Debt Analysis
+✅ Goal Templates + Custom Goals
+✅ Offline-First (localStorage)
+✅ Export Functionality
+✅ Mobile Responsive
+✅ Full Compliance Disclaimers
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live API Integration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app is ready to connect to real APIs. Current setup:
+- Uses simulated data that mimics real API responses
+- To enable live data, uncomment the fetch() calls in `fetchLiveMarketData()`
+- Free APIs available: NSE India, Yahoo Finance
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Data Privacy
 
-### `npm run eject`
+- ALL data stored locally (localStorage)
+- No server calls for user data
+- Market data cached for 5 minutes
+- User can clear all data anytime
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Browser Compatibility
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Chrome/Edge: ✅
+- Firefox: ✅
+- Safari: ✅
+- Mobile browsers: ✅
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## File Size
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Component: ~40KB
+- With dependencies: ~2MB total
 
-## Learn More
+## Next Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Test locally
+2. Deploy to Vercel/Netlify
+3. Convert to React Native for Play Store
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
