@@ -1,4 +1,4 @@
-import FinancialGoalPlanner from "./components/FinancialGoalPlanner";
+import FinancialGoalPlanner from './components/FinancialGoalPlanner';
 
 function App() {
   return <FinancialGoalPlanner />;

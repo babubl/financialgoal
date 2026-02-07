@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { LineChart, Line, PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { TrendingUp, Target, Shield, AlertCircle, DollarSign, Download, RefreshCw, Activity, CheckCircle, ArrowRight, ArrowLeft, Home, GraduationCap, Heart, Plus, Trash2, Edit, ExternalLink, Award, Zap, Info, X } from 'lucide-react';
 
-const WealthPath = () => {
+const FinancialGoalPlanner = () => {
   // ==================== STATE ====================
   const [step, setStep] = useState('landing');
   const [profile, setProfile] = useState({
@@ -61,7 +61,7 @@ const WealthPath = () => {
   };
 
   useEffect(() => {
-    const saved = localStorage.getItem('wealthpath');
+    const saved = localStorage.getItem('FinancialGoalPlanner');
     if (saved) {
       const data = JSON.parse(saved);
       if (data.profile) setProfile(data.profile);
@@ -72,7 +72,7 @@ const WealthPath = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('wealthpath', JSON.stringify({ profile, goals }));
+    localStorage.setItem('FinancialGoalPlanner', JSON.stringify({ profile, goals }));
   }, [profile, goals]);
 
   // ==================== CALCULATIONS ====================
@@ -207,7 +207,7 @@ const WealthPath = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-teal-400 mb-4">✅ WealthPath</h3>
+              <h3 className="text-lg font-bold text-teal-400 mb-4">✅ FinancialGoalPlanner</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>• CFA-certified formulas</li>
                 <li>• Live NSE data (today's numbers)</li>
@@ -335,7 +335,7 @@ const WealthPath = () => {
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold">WealthPath</h1>
+                <h1 className="text-xl font-bold">FinancialGoalPlanner</h1>
                 <p className="text-sm text-gray-600">Hey {profile.name || 'Friend'}! 👋</p>
               </div>
             </div>
@@ -354,7 +354,7 @@ const WealthPath = () => {
                   const url = URL.createObjectURL(blob);
                   const a = document.createElement('a');
                   a.href = url;
-                  a.download = 'wealthpath-plan.json';
+                  a.download = 'FinancialGoalPlanner-plan.json';
                   a.click();
                 }}
                 className="px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 inline-flex items-center gap-2"
@@ -717,4 +717,4 @@ const WealthPath = () => {
   );
 };
 
-export default WealthPath;
+export default FinancialGoalPlanner;
